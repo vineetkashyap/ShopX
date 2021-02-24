@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+
+{% block main-content %}
+    {% for sd in search_data %}
+        {{sd.title}}
+        {{sd.discount_price}}
+        {{sd.discription}}
+    {% endfor %}
+{% endblock main-content %}
